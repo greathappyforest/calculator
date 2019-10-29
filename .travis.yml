@@ -1,8 +1,6 @@
 language: java
-sudo: false
 install: true
 script:
-  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - ./mvnw test -B
 before_install:
   - chmod +x mvnw
